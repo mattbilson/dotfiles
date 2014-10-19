@@ -1,0 +1,20 @@
+{
+	"installed_packages":
+	[
+		"ActionScript 3",
+		"Color Highlighter",
+		"ColorPicker",
+		"DashDoc",
+		"DocBlockr",
+		"Dotfiles Syntax Highlighting",
+		"EditorConfig",
+		"Emmet",
+		"GitGutter",
+		"Jinja2",
+		"Sass",
+		"SublimeGit",
+		"SublimeLinter",
+		"SublimeLinter-gjslint",
+		"SublimeLinter-jshint"
+	]
+}
