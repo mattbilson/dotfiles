@@ -7,4 +7,4 @@
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 # and this to symlink User folder with packages
-ln -s "$DEVELOPMENT_DIR/dotfiles/GitGutter.sublime-settings.symlink" "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
+ln -s ~/.dotfiles/sublime/Packages/User "$HOME/Library/Application Support/Sublime Text 3/Packages/User"

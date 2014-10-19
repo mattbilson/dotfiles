@@ -1,3 +1,15 @@
+# PATH like a badass
+#PATH=$PATH:/opt/local/bin
+#PATH=$PATH:/opt/local/sbin
+	  PATH=~/Development/tools/git-friendly
+PATH=$PATH:/bin
+PATH=$PATH:~/.homebrew/bin
+PATH=$PATH:~/.homebrew/sbin
+PATH=$PATH:~/.rvm/bin
+export PATH
+
+
+
 # init z   https://github.com/rupa/z
 . ~/Development/tools/z/z.sh
 
@@ -10,14 +22,6 @@ source ~/.rvm/scripts/rvm
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-# PATH like a badass
-#PATH=$PATH:/opt/local/bin
-#PATH=$PATH:/opt/local/sbin
-	  PATH=~/Development/tools/git-friendly
-PATH=$PATH:/bin
-PATH=$PATH:~/.homebrew/bin
-PATH=$PATH:~/.homebrew/sbin
-PATH=$PATH:~/.rvm/bin
-export PATH
-
-
+# This loads nvm
+export NVM_DIR="/Users/mattbilson/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

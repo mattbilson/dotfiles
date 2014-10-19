@@ -17,7 +17,8 @@ curl -L https://get.rvm.io | bash -s stable --ruby --auto-dotfiles
 
 # homebrew!
 echo "**\t Installing Homebrew"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 
 # https://github.com/rupa/z
 # z, oh how i love you
@@ -38,16 +39,20 @@ curl https://raw.githubusercontent.com/creationix/nvm/v0.17.2/install.sh | bash
 nvm install 0.10.32
 
 
+echo "**\t Updating .zshrc"
+cp ~/.zshrc ~/.zshrc_backup
+cat ~/.zshrc_backup ~/.dotfiles/.rc > ~/.zshrc
+
 echo "**\t ALL DONE! Opening some browser windows for apps..."
 
 open "http://google.com/chrome"
 open "http://spotify.com"
 open "http://skype.com"
-open "http://http://www.sublimetext.com/"
+open "http://www.sublimetext.com/"
 open "http://www.videolan.org/vlc/index.en_GB.html"
 open "http://iterm2.com/"
 open "https://www.virtualbox.org/"
 open "https://www.dropbox.com/"
 open "https://justgetflux.com/"
 
-open .manual
+open ~/.dotfiles/.manual
