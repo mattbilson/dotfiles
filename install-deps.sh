@@ -1,5 +1,3 @@
-chsh -s /bin/zsh
-
 # up to you (me) if you want to run this as a file or copy paste at your leisure
 echo "**\t Installing oh-my-zsh"
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
@@ -18,7 +16,7 @@ curl -L https://get.rvm.io | bash -s stable --ruby --auto-dotfiles
 # homebrew!
 echo "**\t Installing Homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
+./.brew
 
 # https://github.com/rupa/z
 # z, oh how i love you
@@ -38,21 +36,34 @@ echo "**\t Installing nvm"
 curl https://raw.githubusercontent.com/creationix/nvm/v0.17.2/install.sh | bash
 nvm install 0.10.32
 
+# installing global npm
+npm install -g jshint gulp
+
 
 echo "**\t Updating .zshrc"
 cp ~/.zshrc ~/.zshrc_backup
 cat ~/.zshrc_backup ~/.dotfiles/.rc > ~/.zshrc
+
+echo "**\t Installing QuickLook plugins (https://github.com/sindresorhus/quick-look-plugins)"
+brew cask install qlmarkdown
+brew cask install qlstephen
+brew cask install qlcolorcode
+brew cask install quicklook-json
+brew cask install betterzipql
+brew cask install qlimagesize
+brew cask install webpquicklook
+
 
 echo "**\t ALL DONE! Opening some browser windows for apps..."
 
 open "http://google.com/chrome"
 open "http://spotify.com"
 open "http://skype.com"
-open "http://www.sublimetext.com/"
+open "http://www.sublimetext.com"
 open "http://www.videolan.org/vlc/index.en_GB.html"
-open "http://iterm2.com/"
-open "https://www.virtualbox.org/"
-open "https://www.dropbox.com/"
-open "https://justgetflux.com/"
+open "http://iterm2.com"
+open "https://www.virtualbox.org"
+open "https://www.dropbox.com"
+open "https://justgetflux.com"
 
 open ~/.dotfiles/.manual

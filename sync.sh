@@ -2,7 +2,7 @@
 cd "$(dirname "$0")"
 git pull
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "install-deps.sh" --exclude "README.md" -av . ~
+	rsync --exclude ".git/" --exclude ".brew" --exclude ".DS_Store" --exclude "sync.sh" --exclude "install-deps.sh" --exclude "README.md" --exclude ".rc" --exclude ".osx" --exclude ".manual" --exclude ".extra-example" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
@@ -14,4 +14,3 @@ else
 	fi
 fi
 unset doIt
-source ~/.bash_profile

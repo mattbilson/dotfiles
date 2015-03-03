@@ -1,5 +1,7 @@
 #!/bin/bash
 
+brew doctor
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -10,6 +12,8 @@ brew upgrade
 brew install git
 brew install node
 brew install tree
+
+brew install caskroom/cask/brew-cask
 
 # Remove outdated versions from the cellar
 brew cleanup
