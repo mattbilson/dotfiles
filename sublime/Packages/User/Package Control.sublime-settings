@@ -1,7 +1,6 @@
 {
 	"installed_packages":
 	[
-		"ActionScript 3",
 		"Color Highlighter",
 		"ColorPicker",
 		"DashDoc",
@@ -9,7 +8,6 @@
 		"Dotfiles Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
-		"GitGutter",
 		"Jinja2",
 		"Sass",
 		"SublimeGit",
