@@ -8,6 +8,9 @@ echo "**\t Installing git-friendly"
 rm -rf ~/Development/tools/git-friendly
 git clone git://github.com/jamiew/git-friendly.git ~/Development/tools/git-friendly
 
+echo "**\t Installing git-up"
+sudo gem install git-up
+
 # https://rvm.io
 # rvm for the rubiess
 echo "**\t Installing rvm"
