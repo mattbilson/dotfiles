@@ -34,11 +34,6 @@ cd ~/Development/tools
 git clone https://github.com/thebitguru/play-button-itunes-patch play-button-itunes-patch
 open ./play-button-itunes-patch
 
-# install NVM
-echo "**\t Installing nvm"
-curl https://raw.githubusercontent.com/creationix/nvm/v0.17.2/install.sh | bash
-nvm install 0.10.32
-
 # installing global npm
 npm install -g jshint gulp
 
@@ -46,16 +41,6 @@ npm install -g jshint gulp
 echo "**\t Updating .zshrc"
 cp ~/.zshrc ~/.zshrc_backup
 cat ~/.zshrc_backup ~/.dotfiles/.rc > ~/.zshrc
-
-echo "**\t Installing QuickLook plugins (https://github.com/sindresorhus/quick-look-plugins)"
-brew cask install qlmarkdown
-brew cask install qlstephen
-brew cask install qlcolorcode
-brew cask install quicklook-json
-brew cask install betterzipql
-brew cask install qlimagesize
-brew cask install webpquicklook
-
 
 echo "**\t ALL DONE! Opening some browser windows for apps..."
 

@@ -9,6 +9,13 @@ PATH=$PATH:~/.rvm/bin
 export PATH
 
 
+##TODO move this to zlogin or profile ????
+# nvm
+export NVM_DIR=~/.nvm
+  . $(brew --prefix nvm)/nvm.sh
+
+  
+
 
 # init z   https://github.com/rupa/z
 . ~/Development/tools/z/z.sh
@@ -22,9 +29,3 @@ source ~/.rvm/scripts/rvm
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
-
-
-##TODO move this to zlogin or profile
-# This loads nvm
-export NVM_DIR="/Users/mattbilson/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
