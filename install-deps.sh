@@ -36,6 +36,8 @@ open ./play-button-itunes-patch
 
 # installing global npm
 npm install -g jshint gulp
+npm install --global git-recent
+npm install --global git-open
 
 
 echo "**\t Updating .zshrc"
