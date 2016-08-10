@@ -13,8 +13,11 @@ brew install git
 brew install node
 brew install tree
 brew install nvm
+brew install diff-so-fancy
 
 brew install caskroom/cask/brew-cask
+
+
 
 # Install http util (like curl, but nicer)
 brew install httpie
