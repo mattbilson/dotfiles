@@ -38,6 +38,7 @@ open ./play-button-itunes-patch
 npm install -g jshint gulp
 npm install --global git-recent
 npm install --global git-open
+npm install --global fkill-cli	# https://github.com/sindresorhus/fkill-cli
 
 
 echo "**\t Updating .zshrc"
